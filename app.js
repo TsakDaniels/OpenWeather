@@ -3,14 +3,14 @@
 //city
 //https://api.openweathermap.org/data/2.5/weather?q=London,uk
 
-
-function weatherBalloon(cityID) {
-    //let cityID = document.getElementById("cityID").value;
+/*
+function weatherBalloon() {
+  let cityID = document.getElementById("cityID").value;
     var key = '665fd430be98265a17fbf8370b6d4c50&fbclid=IwAR2hJBQzf4Ayb0F2tgWMHiIobv0lFMiTvKXC5i5o1rmstAqZVlNakMQJdoE';
     fetch('https://api.openweathermap.org/data/2.5/weather?id=' + cityID + '&appid=' + key)  
     .then(function(resp) { return resp.json() }) // Convert data to json
     .then(function(data) {
-      console.log(data);
+      console.log(weatherBalloon());
     })
     .catch(function() {
       // catch any errors
@@ -19,13 +19,14 @@ function weatherBalloon(cityID) {
   
   window.onload = function() {
     weatherBalloon(264371);
+    2988507
+    
   }
-
+*/
  
 
   function drawWeather( d ) {
-	var celcius = Math.round(parseFloat(d.main.temp)-273.15);
-	var fahrenheit = Math.round(((parseFloat(d.main.temp)-273.15)*1.8)+32); 
+	var celcius = Math.round(parseFloat(d.main.temp)-273.15); 
 	
 	document.getElementById('description').innerHTML = d.weather[0].description;
 	document.getElementById('temp').innerHTML = celcius + '&deg;';
@@ -42,7 +43,8 @@ function weatherBalloon(cityID) {
 }
 
 
-function weatherBalloon( cityID ) {
+function weatherBalloon() {
+  let cityID = document.getElementById("cityID").value;
 	var key = '665fd430be98265a17fbf8370b6d4c50&fbclid=IwAR2hJBQzf4Ayb0F2tgWMHiIobv0lFMiTvKXC5i5o1rmstAqZVlNakMQJdoE';
 	fetch('https://api.openweathermap.org/data/2.5/weather?id=' + cityID+ '&appid=' + key)  
 	.then(function(resp) { return resp.json() }) // Convert data to json

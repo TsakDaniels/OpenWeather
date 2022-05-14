@@ -1,14 +1,20 @@
+#pos{
+    display: block;
+    position: absolute;
+    height: 70vh;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 1.3em;
-    color: #fff;
+    color: rgb(255, 255, 255);
     text-shadow: .1em .1em 0 rgba(0,0,0,0.3);
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(to right top, #99bbcb, #a5c7d7, #b1d4e2, #bde0ee, #c9edfa);
+    background-image: linear-gradient(to right top, #3697c4, #90bfd5, #bce0ef, #f5e0a8, #f39164);
 }
 h1 {
     margin: 0 auto;
@@ -25,4 +31,26 @@ body.cloudy {
 }
 body.rainy {
     background-image: linear-gradient(to right top, #637c7b, #718e8c, #7ea09e, #8db2b0, #9bc5c3);
+}
+
+button{
+background-color: rgb(79, 79, 79);
+border-radius: 5px;
+cursor: pointer;
+box-shadow: #353535;
+height: 22px;
+border-color: rgb(52, 52, 52);
+color: white;
+}
+
+input {
+    border: none;
+    background-color: #ffffffad;
+    height: 20px;
+    text-align: center;
+}
+
+h6 {
+    display:block;
+    color: rgb(51, 51, 51);
 }
